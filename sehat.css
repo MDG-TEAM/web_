@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(to bottom right, #ff4d4d, #ff9999);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    position: relative;
+}
+
+.container {
+    max-width: 80%;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Efek bunga merah di sudut */
+body::before {
+    content: "";
+    background: url('bunga.png') no-repeat center;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+body::after {
+    content: "";
+    background: url('bunga.png') no-repeat center;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
